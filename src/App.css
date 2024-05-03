@@ -1,0 +1,115 @@
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-header {
+  background-color: #000000;
+  padding: 20px;
+  color: white;
+}
+
+.budget-container {
+  background-color: #999ca1; 
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(17, 235, 224, 0.1).1;
+  max-width: 600px;
+}
+
+.budget-container form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.budget-container form input[type='text'],
+.budget-container form input[type='number'] {
+  flex: 1; /* 输入框占据可用空间 */
+  margin-right: 8px; /* 在输入框和按钮之间添加一些右边距 */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  font-size: 16px;
+}
+
+.budget-container form button {
+  padding: 10px 15px;
+  background-color: #5cb85c;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* 防止按钮内的文本换行 */
+}
+
+.budget-container form button:hover {
+  background-color: #4cae4c;
+}
+
+@media (max-width: 768px) {
+  .budget-container form {
+    flex-direction: column; /* 在小屏幕上堆叠布局 */
+  }
+
+  .budget-container form input[type='text'],
+  .budget-container form input[type='number'] {
+    margin-right: 0; /* 移除右边距 */
+    margin-bottom: 8px; /* 在输入框之间添加一些底部边距 */
+  }
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ffffff;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.remaining-budget {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.remaining-budget p {
+  margin-top: 10px;
+  color: red;
+  font-weight: bold;
+}
+
+
+h2 {
+  margin-bottom: 0.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin-top: 0.5em;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
